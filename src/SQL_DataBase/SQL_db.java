@@ -11,8 +11,7 @@ import java.sql.Time;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 import com.mysql.jdbc.jdbc2.optional.MysqlConnectionPoolDataSource;
 ///////////////////////////
-/////////////
-///////
+////
 public class SQL_db {
 	private Connection connection;
 	private Statement statement;
