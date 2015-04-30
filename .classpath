@@ -2,8 +2,9 @@
 <classpath>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/CDC-1.1%Foundation-1.1"/>
-	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/שנה ב/שנה ב סמסטר ב/תכנות מתקדם 2/mysql-connector-java-5.1.14-bin.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Downloads/json-simple-1.1.1.jar"/>
-	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Apache Software Foundation/Tomcat 8.0/lib/servlet-api.jar"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/שלומי אלבז/לימודים/שנה ב/שנה ב סמסטר ב/תכנות מתקדם 2/mysql-connector-java-5.1.14-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/catalina.jar"/>
+	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/servlet-api.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

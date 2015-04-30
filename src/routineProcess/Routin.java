@@ -40,7 +40,8 @@ public class Routin extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		try {
-
+			String filePath = new String("C:\\Users\\שלומי אלבז\\לימודים\\ג נוכחי\\eclipseLuna workspace\\gisEclipse\\document.json");
+			
 			// read the json file
 
 			FileReader reader = new FileReader(filePath);

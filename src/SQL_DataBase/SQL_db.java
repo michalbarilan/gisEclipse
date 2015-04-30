@@ -20,8 +20,8 @@ public class SQL_db {
 		try {
 			connect();
 			statement.execute("USE GIS_DB;");
-			statement.execute("CREATE TABLE IF NOT EXISTS updatedLocation (cmid VARCHAR(20),x FLOAT(9,6),y FLOAT(9,6),createdDate DATE(),createdTime TIME(),lastUpdatedDate DATE(),lastUpdatedTime TIME());");
-			statement.execute("CREATE TABLE IF NOT EXISTS locationHistory (cmid VARCHAR(20),x FLOAT(9,6),y FLOAT(9,6),createdDate DATE(),createdTime TIME(),lastUpdatedDate DATE(),lastUpdatedTime TIME());");
+			statement.execute("CREATE TABLE IF NOT EXISTS updatedLocation (cmid VARCHAR(20), x FLOAT(9,6), y FLOAT(9,6), createdDate DATE, createdTime TIME, lastUpdatedDate DATE, lastUpdatedTime TIME);");/*  */
+			statement.execute("CREATE TABLE IF NOT EXISTS locationHistory (cmid VARCHAR(20), x FLOAT(9,6), y FLOAT(9,6), createdDate DATE, createdTime TIME, lastUpdatedDate DATE, lastUpdatedTime TIME);");
 			statement.execute("CREATE TABLE IF NOT EXISTS decisionTable (medicalCondition VARCHAR(25), state VARCHAR(20), area VARCHAR(15), ptientAge FLOAT(5,2), radius INT);");
 		}
 		catch(SQLException se){
