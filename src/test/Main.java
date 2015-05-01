@@ -3,7 +3,9 @@ package test;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
@@ -32,8 +34,26 @@ public class Main {
 			String requestID = (String) jsonObject.get("RequestID");
 
 			System.out.println("RequestID: " + requestID);
+			JSONArray jsonArray=(JSONArray) jsonObject.get("RequestID");
 			if (requestID.equals("routineLocation"))
 			{
+				Iterator i = jsonArray.iterator();
+
+				// take each value from the json array separately
+
+				while (i.hasNext())
+				{
+					JSONObject innerObj = (JSONObject) i.next();
+					String cmid =  (String) innerObj.get("ComunityMemberID");
+					System.out.println("The cmid is: " + cmid);
+					double x = Double.parseDouble(innerObj.get("x").toString());
+					System.out.println("The X is: " + x);
+					double y = Double.parseDouble(innerObj.get("y").toString());
+					System.out.println("The Y is: " + y);
+	
+				}
+			}
+/*			{
 				String cmid =  (String) jsonObject.get("ComunityMemberID");
 
 				System.out.println("The cmid is: " + cmid);
@@ -41,7 +61,7 @@ public class Main {
 				System.out.println("The X is: " + x);
 				double y = Double.parseDouble(jsonObject.get("y").toString());
 				System.out.println("The Y is: " + y);
-			}
+			}*/
 
 
 		} catch (FileNotFoundException ex) {

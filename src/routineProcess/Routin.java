@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Iterator;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -55,15 +56,24 @@ public class Routin extends HttpServlet {
 			String requestID = (String) jsonObject.get("RequestID");
 
 			System.out.println("RequestID: " + requestID);
+			JSONArray jsonArray=(JSONArray) jsonObject.get("RequestID");
 			if (requestID.equals("routineLocation"))
 			{
-				String cmid =  (String) jsonObject.get("ComunityMemberID");
+				Iterator i = jsonArray.iterator();
 
-				System.out.println("The cmid is: " + cmid);
-				Float x= (Float) jsonObject.get("X");
-				System.out.println("The X is: " + x);
-				Float y= (Float) jsonObject.get("Y");
-				System.out.println("The Y is: " + y);
+				// take each value from the json array separately
+
+				while (i.hasNext())
+				{
+					JSONObject innerObj = (JSONObject) i.next();
+					String cmid =  (String) innerObj.get("ComunityMemberID");
+					System.out.println("The cmid is: " + cmid);
+					double x = Double.parseDouble(innerObj.get("x").toString());
+					System.out.println("The X is: " + x);
+					double y = Double.parseDouble(innerObj.get("y").toString());
+					System.out.println("The Y is: " + y);
+	
+				}
 			}
 			// get a number from the JSON object
 
@@ -73,7 +83,7 @@ public class Routin extends HttpServlet {
 
 			// get an array from the JSON object
 
-			//ONArray lang= (JSONArray) jsonObject.get("languages");
+			//JSONArray lang= (JSONArray) jsonObject.get("languages");
 
 
 

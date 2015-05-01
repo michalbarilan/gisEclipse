@@ -6,5 +6,10 @@
 	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/catalina.jar"/>
 	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/json-simple-1.1.1.jar"/>
 	<classpathentry kind="lib" path="C:/Users/שלומי אלבז/לימודים/ג נוכחי/eclipseLuna workspace/gisEclipse/servlet-api.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Downloads/json-simple-1.1.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Downloads/C6E1AE767F4DCD714469.zip"/>
+	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Downloads/mysql-connector-java-5.1.14-bin.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Documents/tom/lib/catalina.jar"/>
+	<classpathentry kind="lib" path="C:/Users/ELIOR-PC/Documents/tom/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
