@@ -1,0 +1,7 @@
+{
+  "arrayOb":[
+      {"RequestID":"routineLocation"}, 
+      {"comunity_member_id":123456, "x":7.777, "y":8.999}, 
+      {"comunity_member_id":123456, "x":7.777,"y":8.999}
+  ]
+}
